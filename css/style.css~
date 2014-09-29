@@ -112,7 +112,7 @@ margin-top: 15px;
   padding-left: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* IE8 proofing */
+  color: black; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
 }
@@ -125,8 +125,8 @@ margin-top: 15px;
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: black;
+  border-bottom-color: black;
 }
 
 @media (min-width: 768px) {
