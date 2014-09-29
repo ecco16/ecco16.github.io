@@ -81,7 +81,7 @@ body {
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-left: 15px;
-	text-align: right;
+	text-align: left;
 }
 .modal-header .close {
 margin-top: 15px;
@@ -170,7 +170,11 @@ margin-top: 15px;
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
-    top: 0;
+    top: 15px;
+    background-color: black;
+	 opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    border-radius: 10%;
   }
   .mastfoot {
     position: fixed;
