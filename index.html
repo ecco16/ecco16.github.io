@@ -25,29 +25,67 @@
 
         <div class="cover-container">
 
-          <div class="masthead clearfix">
+         	 <div class="masthead clearfix">
             <div class="inner">
             
            
               <h3 class="masthead-brand"><img src="/images/logoECCO2016B3.png" alt="" height="80px"></h3>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="/">Home</a></li>
+                <li class="active">
+					 <span class="en"><a href="/">Home</a></span>
+					 <span class="es"><a href="/">Principal</a></span>                
+                </li>
                 
-					
-                <li><a href="#">Dates</a></li>
-                <li><a name="About ECCO" href="http://math.sfsu.edu/federico/SFSUColombia/ecco.html" class="showinfo">About ECCO</a></li>
-                <li><a name="Contact information" href="/pages/contacts.html" class="showinfo">Contact</a></li>
+                <li>
+                <span class="en"><a name="Minicourses" class="showinfo" href="/pages/minicourses.html">Minicourses</a></span>
+					 <span class="es"><a name="Minicursos" class="showinfo" href="/pages/minicursos.html">Minicursos</a></span>     
+                </li>
+                
+                <li>
+					 <span class="en"><a href="#">Program</a></span>
+					 <span class="es"><a href="#">Programa</a></span>                
+                </li>
+                <li>
+					 <span class="en"><a name="Contact information" href="/pages/contacts.html" class="showinfo">Contact</a></span>
+					 <span class="es"><a name="Informacion de contacto" href="/pages/contactos.html" class="showinfo">Contacto</a></span>                
+                </li>
+                <li id="langbutton">
+					 <span class="en"><a  href="#">Espa&ntilde;ol</a></span>
+					 <span class="es"><a  href="#">English</a></span>                 
+                </li>
+                <br/><br/>
+                <li>
+					 <span class="en"><a href="#">Registration</a></span>
+					 <span class="es"><a href="#">Registro</a></span>                
+               </li>
+					<li>
+					 <span class="en"><a href="#">Local Info</a></span>
+					 <span class="es"><a href="#">Info Local</a></span>                
+                </li>                
+                
+                <li>
+					 <span class="en"><a href="#">About Medell&iacute;n</a></span>
+					 <span class="es"><a href="#">Sobre Medell&iacute;n</a></span>                
+                </li>
+                
+                <li>
+					 <span class="en"><a name="About ECCO" href="http://math.sfsu.edu/federico/SFSUColombia/ecco.html" class="showinfo">About ECCO</a></span>
+					 <span class="es"><a name="Sobre ECCO" href="http://math.sfsu.edu/federico/SFSUColombia/ecco.html" class="showinfo">Sobre ECCO</a></span>                
+                </li>
+
                     
               </ul>
             </div>
           </div>
+          <div id="covermain" class="inner cover">
+            <h1 class="cover-heading">Quinto Encuentro Colombiano de Combinatoria <br/>ECCO 2016</h1>
+            <p class="lead en">More information to come...</p>
+            <p class="lead es">Pronto m&aacute;s informaci&oacute;n ...</p>
 
-          <div class="inner cover">
-            <h1 class="cover-heading">Encuentro Colombiano de Combinatoria ECCO 2016</h1>
-            <p class="lead">More information to come...</p>
+            
           </div>
+  
 
-        
 			 <div class="mastfoot">
             <div class="inner">
               <p>template by <a href="https://twitter.com/mdo">@mdo</a>.</p>
@@ -86,7 +124,19 @@ $('.showinfo').on("click", function() { // bind click event to link
 				document.getElementById("dialog-header").innerHTML = newTitle;
 				$('#dialog-showinfo').modal('toggle');
     				return false;
+    			}); 			
+$('#langbutton').on("click", function() { // bind click event to link
+				if (document.documentElement.lang == "es") 
+  			 	{
+       			document.documentElement.lang="en";
+   			}
+   			else 
+   			{
+     			document.documentElement.lang="es";
+   			}
+    				return false;
     			});
+
 </script>
  
 
