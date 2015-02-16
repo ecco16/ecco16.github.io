@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="rafaeldleon" >
+
+
+    
+    <title>Encuentro Colombiano de Combinatoria ECCO 2016</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+         	 <div class="masthead clearfix">
+            <div class="inner">
+            
+           
+              <h3 class="masthead-brand"><img src="/images/logoECCO2016B3.png" alt="" height="80px"></h3>
+              <ul class="nav masthead-nav">
+                <li class="active">
+					 <span class="en"><a href="/index_en.html">Home</a></span>
+					 <span class="es"><a href="/index_es.html">Principal</a></span>                
+                </li>
+                
+                <li>
+                <span class="en"><a name="Minicourses" class="showinfo" href="/pages/minicourses.html">Minicourses</a></span>
+					 <span class="es"><a name="Minicursos" class="showinfo" href="/pages/minicursos.html">Minicursos</a></span>     
+                </li>
+                
+                <li>
+					 <span class="en"><a name="Program" class="showinfo" href="/pages/program.html">Program</a></span>
+					 <span class="es"><a name="Programa" class="showinfo"  href="/pages/programa.html">Programa</a></span>               
+                </li>
+                <li>
+					 <span class="en"><a name="Contact information" href="/pages/contacts.html" class="showinfo">Contact</a></span>
+					 <span class="es"><a name="Informacion de contacto" href="/pages/contactos.html" class="showinfo">Contacto</a></span>                
+                </li>
+                <li id="langbutton">
+					 <span class="en"><a  href="#">Espa&ntilde;ol</a></span>
+					 <span class="es"><a  href="#">English</a></span>                 
+                </li>
+                <br/><br/>
+                <li>
+					 <span class="en"><a href="#">Registration</a></span>
+					 <span class="es"><a href="#">Registro</a></span>                
+               </li>
+					<li>
+					 <span class="en"><a href="#">Local Info</a></span>
+					 <span class="es"><a href="#">Info Local</a></span>                
+                </li>                
+                
+                <li>
+					 <span class="en"><a href="#">About Medell&iacute;n</a></span>
+					 <span class="es"><a href="#">Sobre Medell&iacute;n</a></span>                
+                </li>
+                
+                <li>
+					 <span class="en"><a name="About ECCO" href="http://math.sfsu.edu/federico/SFSUColombia/ecco.html" class="showinfo">About ECCO</a></span>
+					 <span class="es"><a name="Sobre ECCO" href="http://math.sfsu.edu/federico/SFSUColombia/ecco.html" class="showinfo">Sobre ECCO</a></span>                
+                </li>
+
+                    
+              </ul>
+            </div>
+          </div>
+          <div id="covermain" class="inner cover">
+            <h1 class="cover-heading">Quinto Encuentro Colombiano de Combinatoria <br/>ECCO 2016</h1>
+            <p class="lead en">More information to come...</p>
+            <p class="lead es">Pronto m&aacute;s informaci&oacute;n ...</p>
+
+            
+          </div>
+  
+
+			 <div class="mastfoot">
+            <div class="inner">
+              <p>template by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+<!-- Modal -->
+
+<div id="dialog-showinfo" class="modal fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" padding-top=2px height=5px>&times;</button>
+    <h2 id="dialog-header">Header</h2>
+  </div>
+
+  <iframe id="iframe-dialog-showinfo" frameborder="0" src=""></iframe>
+
+</div>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  	 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript">
+
+$('.showinfo').on("click", function() { // bind click event to link
+				var newHref=$(this).attr('href');
+				var newTitle=$(this).attr('name');
+    				document.getElementById("iframe-dialog-showinfo").src = newHref;
+				document.getElementById("dialog-header").innerHTML = newTitle;
+				$('#dialog-showinfo').modal('toggle');
+    				return false;
+    			}); 			
+$('#langbutton').on("click", function() { // bind click event to link
+				if (document.documentElement.lang == "es") 
+  			 	{
+       			document.documentElement.lang="en";
+   			}
+   			else 
+   			{
+     			document.documentElement.lang="es";
+   			}
+    				return false;
+    			});
+
+</script>
+ 
+
+</body></html>
