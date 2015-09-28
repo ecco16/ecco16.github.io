@@ -198,11 +198,6 @@ margin-top: 15px;
 	height: 15%;
 }
 
-.logo{
-	position: relative;
-	background-color: white;
-	overflow:hidden;
-}
 /*
  * Affix and center
  */
