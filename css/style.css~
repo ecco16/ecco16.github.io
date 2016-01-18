@@ -70,8 +70,8 @@ body {
 	top: 5%;
 	left: 5%;
 	background-color: white;
-   opacity: 0.8;
-   filter: alpha(opacity=80); /* For IE8 and earlier */
+   opacity: 0.9;
+   filter: alpha(opacity=90); /* For IE8 and earlier */
 	width: 90%;
 	height: 90%;
 	border-radius: 5px;
